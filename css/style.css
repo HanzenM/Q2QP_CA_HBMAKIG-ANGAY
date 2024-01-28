@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Salsa&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    z-index:1;
+}
+/*BODY START*/
+body{
+    background-color: #FAF3DD;
+}
+/*BODY END*/
+
+/*NAVBAR START*/
+nav {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 5vh;
+    padding: 1vw;
+    text-align: center;
+    background-color: #C8D5B9;
+    z-index:99;
+    border:1px solid #202A25;
+}
+
+.links {
+    font-size:1vw;
+    margin:11vw;
+    margin-top: 1.5vh;
+    border:1px solid #202A25;
+    background-color: #FAF3DD;
+    border-radius: 0.5vw;
+    padding:0.5vw;
+    position:absolute;
+    top:0.5vw;
+    right:1vw;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    color:#202A25;
+    text-decoration: none;
+    transition:0.3s;
+    animation:smaller 0.3s forwards;
+}
+
+.links:hover{
+    transition:0.3s;
+    animation:bigger 0.3s forwards;
+    opacity:0.7;
+}
+
+.title {
+    float: left;
+    margin-left: 1.5vw;
+    font-family: "Salsa", cursive;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 1vh;
+    font-size:1.5vw;
+    color: #202A25
+}
+
+.right{
+    margin-right:5vw;
+}
+
+.right2{
+    margin-right:3.5vw;
+}
+
+@keyframes bigger {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes smaller {
+    0% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/*NAVBAR END*/
+/*FOOTER START*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 100vw;
+    height:5vh;
+    padding: 0.75vw;
+    text-align: center;
+    background-color: #C8D5B9;
+    z-index:98;
+    border:1px solid #202A25;
+}
+
+.copyright{
+    float:left;
+    font-size:1vw;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    color:#202A25;
+    background-image:#C8D5B9
+}
+
+.facebook, .github, .email{
+    margin: 0.5vh;
+    background-color:white;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    animation:smaller 0.3s forwards;
+    transition:0.3s;
+}
+
+.socials{
+    float: right;
+}
+
+.facebook:hover, .email:hover, .github:hover{
+    animation:bigger 0.3s forwards;
+    opacity:0.7;
+    transition:0.3s;
+}
+
+.facebook{
+    background: url('../images/spritesheet.png') no-repeat -226px -129px;
+	width: 33px;
+	height: 32px;
+    z-index:99;
+}
+
+.email{
+    background: url('../images/spritesheet.png') no-repeat -55px -129px;
+	width: 32px;
+	height: 33px;
+    z-index:99;
+}
+
+.github{
+    background: url('../images/spritesheet.png') no-repeat -456px -129px;
+	width: 32px;
+	height: 33px;
+    z-index:99;
+}
+
+/*FOOTER END*/
+/*BANNER AND SLOGAN START*/
+.videobg{
+    width:100%;
+    height:auto;
+    position:absolute;
+    z-index:-1;
+    left:0;
+    top:0;
+}
+.slogan{
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:3vw;
+    margin-top:20vw;
+    z-index:1;
+    color:white;
+    text-align:center;
+
+}
+
+.slogantext{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    margin-top:2vw;
+    color:white;
+    text-align: center;
+    margin-left:20vw;
+    margin-right:20vw;
+    font-size:1.5vw;
+}
+/*BANNER AND SLOGAN END*/
+/*ORGANIZATION BACKGROUND START*/
+.orgbg{
+    margin-top:25vw;
+    margin-bottom:5vw;
+    text-align:center;
+}
+.orgbgtitle{
+    font-family: "Salsa", cursive;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 1vh;
+    font-size:3vw;
+    color:#202A25;
+    margin-left:5vw;
+    margin-bottom:5vw;
+}
+.orgbgtext{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    color:#202A25;
+    margin-left:20vw;
+    margin-right:20vw;
+    font-size:1.3vw;
+}
+/*ORGANIZATION BACKGROUND END*/
+/*ORGANIZATION PROGRESS START*/
+.orgprog{
+    margin-bottom:10vw;
+    text-align:center;
+}
+.orgprogtitle{
+    font-family: "Salsa", cursive;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 1vh;
+    font-size:3vw;
+    color:#202A25;
+    margin-left:5vw;
+    margin-bottom:5vw;
+}
+
+.orgprogboxes{    
+    text-align:center;
+    display: flex;                
+    flex-direction: row;           
+    flex-wrap: nowrap;       
+    justify-content: space-between;
+    margin-left:5vw;
+    margin-right:5vw; 
+                
+}
+
+
+.opbox{
+    border:1px solid #202A25;
+    width: 20vw;;
+    height: auto;
+    background-image: linear-gradient(#C8D5B9, #E9E9D0);
+    padding: 5vh;
+    z-index:-1;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.optitle{
+    font-family: "Salsa", cursive;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 1vh;
+    font-size:2vw;
+    color:#202A25;
+    margin-bottom:2vw;
+}
+
+.optext{
+    font-size:1vw;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    color:#202A25;
+}
+/*ORGANIZATION PROGRESS END*/
+/*INITIATIVES START*/
+.initiatives{
+    margin-left:5vw;
+    margin-right:5vw;
+    margin-top:15vw;
+    display:flex;
+    text-align:center;
+}
+
+.initiaimage img{
+    width:auto;
+    height:40vh;
+}
+
+.initiatext{
+    float:left;
+}
+
+.initiatitle{
+    margin-top:1vw;
+    font-family: "Salsa", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size:2.5vw;
+    color:#202A25;
+}
+
+.initiaparagraph{
+    font-size:1.2vw;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    color:#202A25;
+    margin-left:3vw;
+    margin-right:3vw;
+    margin-top:3vw;
+}
+/*INITIATIVES END*/
+/*INVOLVEMENTS START*/
+.involvements{
+    margin-left:5vw;
+    margin-right:5vw;
+    margin-top:5vw;
+    display:flex;
+    text-align:center;
+    margin-bottom:5vw;
+}
+
+.involveimage img{
+    width:auto;
+    height:40vh;
+}
+
+.involveimage{
+    margin-right:3vw;
+    float:left;
+    animation:mrbeast 3s;
+}
+
+.involvetitle{
+    margin-top:1vw;
+    font-family: "Salsa", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size:2.5vw;
+    color:#202A25;
+}
+
+.involveparagraph{
+    font-size:1.2vw;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    color:#202A25;
+    margin-top:3vw;
+}
+
+@keyframes mrbeast {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    100% {
+        transform: scale(10.0) rotate(9999999999999999999999999999999999999999999999999999999999999999999999999999deg);
+    }
+}
+/*INVOLVEMENTS END*/
+/*ACTIVITIES AND PARTICIPITATION START*/
+.anpprog{
+    margin-bottom:10vw;
+    text-align:center;
+}
+.anpprogtitle{
+    font-family: "Salsa", cursive;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 1vh;
+    font-size:3vw;
+    color:#202A25;
+    margin-left:5vw;
+    margin-bottom:5vw;
+}
+
+.anpprogboxes{    
+    text-align:center;
+    display: flex;                
+    flex-direction: row;           
+    flex-wrap: nowrap;       
+    justify-content: space-between;
+    margin-left:5vw;
+    margin-right:5vw;             
+}
+
+
+.anpbox{
+    border:1px solid #202A25;
+    width: 20vw;;
+    height: auto;
+    background-image: linear-gradient(#C8D5B9, #E9E9D0);
+    padding: 5vh;
+    z-index:-1;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.anptitle{
+    font-family: "Salsa", cursive;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 1vh;
+    font-size:2vw;
+    color:#202A25;
+    margin-bottom:2vw;
+}
+
+.anptext{
+    font-size:1vw;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    color:#202A25;
+}
+/*ACTIVITIES AND PARTICIPITATION END*/
+/*WHO WE ARE START*/
+.whoweare{
+    margin-left:5vw;
+    margin-right:5vw;
+    margin-top:15vw;
+    display:flex;
+    text-align:center;
+}
+
+.wwaimage img{
+    width:auto;
+    height:40vh;
+}
+
+.wwatext{
+    float:left;
+}
+
+.wwatitle{
+    margin-top:1vw;
+    font-family: "Salsa", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size:2.5vw;
+    color:#202A25;
+}
+
+.wwaparagraph{
+    font-size:1.2vw;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    color:#202A25;
+    margin-left:3vw;
+    margin-right:3vw;
+    margin-top:3vw;
+}
+/*WHO WE ARE END*/
+/*VISSION AND MISSION START*/
+.visionandmission{
+    margin-left:8vw;
+    margin-right:8vw;
+    margin-top:10vw;
+    display:flex;
+    text-align:center;                
+    flex-direction: row;           
+    flex-wrap: nowrap;       
+    justify-content: space-between; 
+}
+
+.vamtitle{
+    margin-top:1vw;
+    font-family: "Salsa", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size:2.5vw;
+    color:#202A25;
+}
+
+.vamparagraph{
+    font-size:1.2vw;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    color:#202A25;
+    margin-left:5vw;
+    margin-right:5vw;
+    margin-top:3vw;
+    height:auto;
+    width:30vw;
+}
+/*VISSION AND MISSION END*/
+/*HOW TO HELP/PARTICIPATE START*/
+.hthp{
+    margin-left:5vw;
+    margin-right:5vw;
+    margin-top:5vw;
+    margin-bottom:10vw;
+    display:flex;
+    text-align:center;
+}
+
+.hthpvideo{
+    width:auto;
+    height:40vh;
+    margin-right:3vw;
+    float:left;
+}
+
+.hthptitle{
+    margin-top:1vw;
+    font-family: "Salsa", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size:2.5vw;
+    color:#202A25;
+}
+
+.hthpparagraph{
+    font-size:1vw;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    color:#202A25;
+    margin-top:3vw;
+}
+/*HOW TO HELP/PARTICIPATE END*/
+/*PORTRAIT CHANGES START*/
+@media (orientation:portrait){
+    .hthpimage img,.wwaimage img,.involveimage img,.initiaimage img{
+        height:20vh;
+    }
+}
+/*PORTRAIT CHANGES END*/
